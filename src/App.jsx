@@ -8,8 +8,18 @@ function App() {
 
   return (
     <>
-      <div>
-        <h1 className="font-bold">Premier League Tables</h1>
+      <div className="min-h-screen bg-black text-white p-8">
+        <div className="max-w-7xl mx-auto">
+          {/* Header & filter */}
+          <div className="mb-8">Header</div>
+
+          {/* Standings table */}
+          <div className="overflow-x-auto rounded-lg border border-gray-800">Area</div>
+
+          {/* footer */}
+          <div className="mt-6 flex flex-wrap gap-6">footer</div>
+
+        </div>
       </div>
     </>
   )
