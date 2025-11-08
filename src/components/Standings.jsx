@@ -14,13 +14,15 @@ export default function Standings(){
                     </tr>
                 </thead>
                 <tbody>
-                    <td className="px-4 py-4 text-left text-white">1</td>
-                    <td className="px-4 py-4 text-left text-white">Semur Zengkol FC</td>
-                    <td className="px-4 py-4 text-left text-white">1</td>
-                    <td className="px-4 py-4 text-left text-white">3</td>
-                    <td className="px-4 py-4 text-left text-white">0</td>
-                    <td className="px-4 py-4 text-left text-white">0</td>
-                    <td className="px-4 py-4 text-left text-white">3</td>
+                    <tr className="border border-gray-800 hover:bg-gray-900/50 transition-colors bg-blue-950/40">
+                        <td className="px-4 py-4 text-left text-white">1</td>
+                        <td className="px-4 py-4 text-left text-white">Semur Zengkol FC</td>
+                        <td className="px-4 py-4 text-left text-white">1</td>
+                        <td className="px-4 py-4 text-left text-white">3</td>
+                        <td className="px-4 py-4 text-left text-white">0</td>
+                        <td className="px-4 py-4 text-left text-white">0</td>
+                        <td className="px-4 py-4 text-left text-white">3</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
