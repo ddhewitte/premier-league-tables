@@ -7,9 +7,9 @@ export default function Standings(){
                         <th className="px-4 py-4 text-left text-white">Position</th>
                         <th className="px-4 py-4 text-left text-white">Team</th>
                         <th className="px-4 py-4 text-left text-white">Played</th>
-                        <th className="px-4 py-4 text-left text-white">Win</th>
-                        <th className="px-4 py-4 text-left text-white">Draw</th>
-                        <th className="px-4 py-4 text-left text-white">Lost</th>
+                        <th className="px-4 py-4 text-left text-green-800">Win</th>
+                        <th className="px-4 py-4 text-left text-gray-500">Draw</th>
+                        <th className="px-4 py-4 text-left text-red-800">Lost</th>
                         <th className="px-4 py-4 text-left text-white">Points</th>
                     </tr>
                 </thead>
