@@ -9,8 +9,8 @@ export default function Standings({data}){
                         <th className="px-4 py-4 text-left text-white">Position</th>
                         <th className="px-4 py-4 text-left text-white">Team</th>
                         <th className="px-4 py-4 text-left text-white">Played</th>
-                        <th className="px-4 py-4 text-left text-green-800">Win</th>
-                        <th className="px-4 py-4 text-left text-gray-500">Draw</th>
+                        <th className="px-4 py-4 text-left text-green-800">Won</th>
+                        <th className="px-4 py-4 text-left text-gray-500">Drawn</th>
                         <th className="px-4 py-4 text-left text-red-800">Lost</th>
                         <th className="px-4 py-4 text-left text-white">Points</th>
                     </tr>
