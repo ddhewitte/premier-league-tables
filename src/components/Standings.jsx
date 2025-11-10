@@ -17,7 +17,14 @@ export default function Standings({data, sortByItem}){
                 </thead>
                 <tbody>
                     { sortedData.map((item) => ( 
-                        <tr className="border border-gray-800 hover:bg-gray-900/50 transition-colors bg-blue-950/40" key={item.name}>
+                        <tr className={`border border-gray-800 hover:bg-gray-900/50 transition-colors bg-blue-950/40 
+                            ${sortBy === 'points' ? 
+                                item.position < 5 ? "border-l-blue-500 border-l-4" :
+                                item.position === 5 ? "border-l-orange-500 border-l-4" :
+                                item.position > 17 ? "border-l-red-500 border-l-4" :
+                                ''
+                                : '' 
+                            }`} key={item.name}>
                             <td className="px-4 py-4 text-left text-white">{item.position}</td>
                             <td className="px-4 py-4 text-left text-white">{item.name}</td>
                             <td className="px-4 py-4 text-left text-white">{item.played}</td>
