@@ -1,4 +1,6 @@
 export default function Standings({data}){
+
+    const sortedData = data.sort((a,b) => a.position-b.position);
     return(
         <div className="overflow-x-auto rounded-lg border border-gray-800">
             <table className="w-full border-collapse">
@@ -14,7 +16,7 @@ export default function Standings({data}){
                     </tr>
                 </thead>
                 <tbody>
-                    { data.map((item) => ( 
+                    { sortedData.map((item) => ( 
                         <tr className="border border-gray-800 hover:bg-gray-900/50 transition-colors bg-blue-950/40" key={item.name}>
                             <td className="px-4 py-4 text-left text-white">{item.position}</td>
                             <td className="px-4 py-4 text-left text-white">{item.name}</td>
