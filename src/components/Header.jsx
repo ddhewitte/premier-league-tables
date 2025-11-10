@@ -8,10 +8,11 @@ export default function Header({sortBy}){
             <div>
                 <label htmlFor="sort">Sort by </label>
                 <select id="sort" onChange={(e) => sortBy(e.target.value)}>
-                    <option value="won">Won</option> 
-                    <option value="drawn">Drawn</option> 
-                    <option value="lost">Lost</option>
                     <option value="points">Points</option>
+                    <option value="wins">Won</option> 
+                    <option value="draws">Drawn</option> 
+                    <option value="losses">Lost</option>
+                    
                 </select>
             </div>
         </div>

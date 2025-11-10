@@ -9,6 +9,7 @@ import { getStandingData } from './services/standingService'
 
 function App() {
   const [standing, setStanding] = useState([]);
+  const [sort, setSort] = useState('Points');
 
   useEffect(() => {
     const fetchStanding = async() => {
@@ -23,7 +24,7 @@ function App() {
   }, []);
 
   const sortBy = (item) => {
-    console.log(item);
+    setSort(item);
   }
 
   return (
@@ -31,7 +32,7 @@ function App() {
       <div className="min-h-screen bg-black text-white p-8">
         <div className="max-w-7xl mx-auto">
           <Header sortBy={sortBy}/>
-          <Standings data={standing}/>
+          <Standings data={standing} sortByItem={sort}/>
           <Footer />
         </div>
       </div>

@@ -1,6 +1,6 @@
-export default function Standings({data}){
-
-    const sortedData = data.sort((a,b) => a.position-b.position);
+export default function Standings({data, sortByItem}){
+    const sortBy = sortByItem.toLowerCase();
+    const sortedData = [...data].sort((a, b) => b[sortBy] - a[sortBy]);
     return(
         <div className="overflow-x-auto rounded-lg border border-gray-800">
             <table className="w-full border-collapse">
